@@ -1,11 +1,11 @@
 package to.msn.wings.front_android
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
 import to.msn.wings.front_android.adapter.list.ListAdapter
 import to.msn.wings.front_android.dao.list.Search
-import to.msn.wings.front_android.vo.list.Item
 
 class ListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,5 +21,15 @@ class ListActivity : AppCompatActivity() {
             R.layout.item,
         )
 
+        list.setOnItemClickListener { _, _, _, id ->
+            this.toDetailActivity(id.toString())
+        }
+    }
+
+    private fun toDetailActivity(id: String) {
+        val intent = Intent(this, DetailActivity::class.java).apply {
+            putExtra("id", id)
+        }
+        startActivity(intent)
     }
 }
