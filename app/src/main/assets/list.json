@@ -2,19 +2,19 @@
   "result": [
     {
       "id": 1,
-      "title": "title1",
+      "title": "国家試験にAIを導入",
       "summary": "summary1",
       "date": "2023-02-26"
     },
     {
       "id": 2,
-      "title": "title2",
+      "title": "アメリカ中間選挙まもなく",
       "summary": "summary2",
       "date": "2023-02-26"
     },
     {
       "id": 3,
-      "title": "title3",
+      "title": "経済活動再開",
       "summary": "summary3",
       "date": "2023-02-26"
     }
