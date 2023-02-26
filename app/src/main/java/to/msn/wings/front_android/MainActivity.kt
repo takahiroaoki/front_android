@@ -1,6 +1,9 @@
 package to.msn.wings.front_android
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -31,5 +34,15 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val searchButton = findViewById<Button>(R.id.button)
+        searchButton.setOnClickListener {
+            toListActivity()
+        }
+    }
+
+    private fun toListActivity() {
+        val intent = Intent(this, ListActivity::class.java)
+        startActivity(intent)
     }
 }
