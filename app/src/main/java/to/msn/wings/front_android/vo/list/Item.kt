@@ -1,4 +1,4 @@
-package to.msn.wings.front_android.viewHelper.list
+package to.msn.wings.front_android.vo.list
 
 data class Item(
     val id: Long,

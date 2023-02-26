@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import to.msn.wings.front_android.R
-import to.msn.wings.front_android.viewHelper.list.Item
+import to.msn.wings.front_android.vo.list.Item
 
 class ListAdapter (
     private val context: Context,
